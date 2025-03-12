@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import Joi from "joi";
-import PreResponseWithValidation from "@/app/api/middlewares/PreResponseWithValidation";
-import GetUserSessionUseCase from "@/app/api/use-case/auth/GetUserSessionUseCase";
-import { ErrorHandler } from "@/app/api/middlewares/ErrorHandler";
-import ChangeUserData from "@/app/api/use-case/auth/ChangeUserData";
+import PreResponseWithValidation from "../../middlewares/PreResponseWithValidation";
+import GetUserSessionUseCase from "../../use-case/auth/GetUserSessionUseCase";
+import { ErrorHandler } from "../../middlewares/ErrorHandler";
+import ChangeUserData from "../../use-case/auth/ChangeUserData";
 
 const schemaPut = Joi.object({ 
   password: Joi.string().min(6).required().messages({

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Joi from "joi";
-import PreResponseWithValidation from "@/app/api/middlewares/PreResponseWithValidation";
-import { ErrorHandler } from "@/app/api/middlewares/ErrorHandler";
+import PreResponseWithValidation from "../../middlewares/PreResponseWithValidation";
+import { ErrorHandler } from "../../middlewares/ErrorHandler";
 import LoginUseCase from "../../use-case/auth/LoginUseCase";
 const jwt = require("jsonwebtoken")
 
