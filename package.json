@@ -24,9 +24,7 @@
     "nextjs-cors": "^2.2.0",
     "prisma": "^5.17.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
+    "react-dom": "^19.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
