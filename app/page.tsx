@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <>API IS RUNNING</>
+    <div>API IS RUNNING</div>
   );
 }
