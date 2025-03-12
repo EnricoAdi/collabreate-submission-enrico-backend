@@ -1,4 +1,4 @@
-import { Dict } from "@/types/main";
+import { Dict } from "../types/main";
 
 export default class StandardError extends Error {
     public statusCode: number;

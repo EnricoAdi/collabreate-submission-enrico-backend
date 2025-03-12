@@ -1,8 +1,8 @@
-import NotFoundError from "@/errors/NotFoundError"
+import NotFoundError from "../../../../errors/NotFoundError"
 import User from "../../repository/User"
 import Transaction from "../../repository/Transaction"
-import TRANSACTION from "@/types/enums/transaction.enum"
-import { convertToRFCFromString } from "@/utils/Date"
+import TRANSACTION from "../../../../types/enums/transaction.enum"
+import { convertToRFCFromString } from "../../../../utils/Date"
 
 const FetchTransactionUseCase = {
   async execute(user_id:number){

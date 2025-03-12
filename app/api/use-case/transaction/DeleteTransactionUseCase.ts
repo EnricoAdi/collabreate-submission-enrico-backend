@@ -1,7 +1,7 @@
-import NotFoundError from "@/errors/NotFoundError"
+import NotFoundError from "../../../../errors/NotFoundError"
 import User from "../../repository/User"
 import Transaction from "../../repository/Transaction" 
-import AuthorizationError from "@/errors/AuthorizationError"
+import AuthorizationError from "../../../../errors/AuthorizationError"
 
 const DeleteTransactionUseCase = {
   async execute(user_id:number,transaction_id:number){

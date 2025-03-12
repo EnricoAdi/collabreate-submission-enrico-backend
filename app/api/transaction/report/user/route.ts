@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server"; 
-import { ErrorHandler } from "@/app/api/middlewares/ErrorHandler";
+import { ErrorHandler } from "../../../middlewares/ErrorHandler";
 import GetUserSessionUseCase from "../../../use-case/auth/GetUserSessionUseCase"; 
 import FetchTransactionUseCase from "../../../use-case/transaction/FetchTransactionUseCase";
-import PreResponse from "@/app/api/middlewares/PreResponse";
+import PreResponse from "../../../middlewares/PreResponse";
  
 
 async function handlerGet(req: NextRequest, data:object){

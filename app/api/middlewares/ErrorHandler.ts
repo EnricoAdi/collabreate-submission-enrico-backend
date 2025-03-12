@@ -1,4 +1,4 @@
-import StandardError from '@/errors/StandardError'; 
+import StandardError from '../../../errors/StandardError'; 
 import { NextResponse } from 'next/server';
 
 /**

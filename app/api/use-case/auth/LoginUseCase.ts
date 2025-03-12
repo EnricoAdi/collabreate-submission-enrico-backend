@@ -1,7 +1,7 @@
-import User from "@/app/api/repository/User"
-import CustomError from "@/errors/CustomError"
-import NotFoundError from "@/errors/NotFoundError"
-import { convertToRFCFromString } from "@/utils/Date"
+import User from "../../repository/User"
+import CustomError from "../../../../errors/CustomError"
+import NotFoundError from "../../../../errors/NotFoundError"
+import { convertToRFCFromString } from "../../../../utils/Date"
 const bcrypt = require('bcrypt')
 
 const LoginUseCase = {

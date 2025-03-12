@@ -1,5 +1,5 @@
-import User from "@/app/api/repository/User"
-import NotUniqueError from "@/errors/NotUniqueError" 
+import User from "../../repository/User"
+import NotUniqueError from "../../../../errors/NotUniqueError" 
 const bcrypt = require('bcrypt') 
 const RegisterUseCase = {
   async execute(username:string, password:string, name:string){

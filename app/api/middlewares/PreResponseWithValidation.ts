@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import JoiError from '@/errors/JoiError';
+import JoiError from '../../../errors/JoiError';
 import { NextRequest, NextResponse } from 'next/server';
 import ExtractValue from '../utils/ExtractValue';
 /**

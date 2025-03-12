@@ -1,7 +1,7 @@
-import NotFoundError from "@/errors/NotFoundError"
+import NotFoundError from "../../../../errors/NotFoundError"
 import User from "../../repository/User"
 import Transaction from "../../repository/Transaction"
-import TRANSACTION from "@/types/enums/transaction.enum"
+import TRANSACTION from "../../../../types/enums/transaction.enum"
 
 const CreateTransactionUseCase = {
   async execute(user_id:number,name:string, value:string, date:string,type:string){

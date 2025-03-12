@@ -1,6 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { IRepository } from "./_IRepository";
-import prisma from "@/services/Prisma";
+import prisma from "../../../services/Prisma";
 
 export default new class Transaction implements IRepository {
   create(newTransaction : Prisma.transactionCreateInput) {

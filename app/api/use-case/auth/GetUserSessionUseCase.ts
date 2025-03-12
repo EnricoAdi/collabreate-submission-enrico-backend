@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse, GetServerSidePropsContext } from "next"
-import AuthorizationError from "@/errors/AuthorizationError" 
+import AuthorizationError from "../../../../errors/AuthorizationError" 
 import { NextRequest } from "next/server";
 import { DateTime } from "luxon"; 
 const jwt = require("jsonwebtoken") 

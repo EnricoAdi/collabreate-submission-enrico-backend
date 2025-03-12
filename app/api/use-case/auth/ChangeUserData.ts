@@ -1,5 +1,5 @@
-import NotFoundError from "@/errors/NotFoundError";
-import User from "@/app/api/repository/User"; 
+import NotFoundError from "../../../../errors/NotFoundError";
+import User from "../../repository/User"; 
 const bcrypt = require('bcrypt')
 
 const ChangeUserData = {
