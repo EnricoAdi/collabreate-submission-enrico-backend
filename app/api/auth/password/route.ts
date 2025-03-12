@@ -4,7 +4,6 @@ import PreResponseWithValidation from "@/app/api/middlewares/PreResponseWithVali
 import GetUserSessionUseCase from "@/app/api/use-case/auth/GetUserSessionUseCase";
 import { ErrorHandler } from "@/app/api/middlewares/ErrorHandler";
 import ChangeUserData from "@/app/api/use-case/auth/ChangeUserData";
-import { getToken } from "next-auth/jwt";
 
 const schemaPut = Joi.object({ 
   password: Joi.string().min(6).required().messages({

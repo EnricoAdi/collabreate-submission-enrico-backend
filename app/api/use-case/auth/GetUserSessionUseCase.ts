@@ -1,18 +1,16 @@
 import { NextApiRequest, NextApiResponse, GetServerSidePropsContext } from "next"
-import NextAuth, { getServerSession, Session, UserProfileSession } from "next-auth"
 import AuthorizationError from "@/errors/AuthorizationError" 
 import { NextRequest } from "next/server";
 import { DateTime } from "luxon"; 
 const jwt = require("jsonwebtoken") 
 
-declare module "next-auth" {
-  interface UserProfileSession {
-    username: string,
-    user_id: number,
-    name: string,
-    created_at: DateTime
-  } 
-}
+interface UserProfileSession {
+  username: string,
+  user_id: number,
+  name: string,
+  created_at: DateTime
+} 
+
 const GetUserSessionUseCase = {
   async _validateServerSession(token:string|null){
     if(!token) throw new AuthorizationError()
